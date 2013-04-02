@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
+# this code does not work.
+
 import sys
 from pyproxmox import *
 
 def main():
 	# connect to proxmox
-	px_auth = prox_auth('10.13.37.202','apiuser@pve','unohmipa')
+	px_auth = prox_auth('10.13.37.202','apiuser@pve','apipasswd')
 	global px 
 	px = pyproxmox(px_auth)
 	# print px.getClusterStatus()
